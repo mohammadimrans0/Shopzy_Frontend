@@ -24,7 +24,7 @@ export default function TopMenu() {
                     onClick={() => !isMenu ? setIsMenu(true) : setIsMenu(false)} 
                     className="flex items-center gap-2 hover:underline cursor-pointer"
                 >
-                    <div>Hi, {user.name}</div>
+                    <div className="text-base">Hi, {user.name}</div>
                     <BsChevronDown/>
                 </button>
             )
@@ -44,7 +44,7 @@ export default function TopMenu() {
                 <div className="flex items-center justify-between w-full mx-auto max-w-[1200px]">
                     <ul 
                         id="TopMenuLeft"
-                        className="flex items-center text-[11px] text-[#333333] px-2 h-8"
+                        className="flex items-center text-[13px] text-[#333333] px-2 h-8"
                     >
                         <li className="relative px-3">
 
@@ -67,14 +67,14 @@ export default function TopMenu() {
                                 <div className="border-b"/>
 
                                 <ul className="bg-white">
-                                    <li className="text-[11px] py-2 px-4 w-full hover:underline text-blue-500 hover:text-blue-600 cursor-pointer">
+                                    <li className="text-[13px] py-2 px-4 w-full hover:underline text-blue-500 hover:text-blue-600 cursor-pointer">
                                         <Link href="/orders">
                                             My orders
                                         </Link>
                                     </li>
                                     <li 
                                         onClick={() => { user.signOut(); setIsMenu(false) }} 
-                                        className="text-[11px] py-2 px-4 w-full hover:underline text-blue-500 hover:text-blue-600 cursor-pointer"
+                                        className="text-[13px] py-2 px-4 w-full hover:underline text-blue-500 hover:text-blue-600 cursor-pointer"
                                     >
                                         Sign out
                                     </li>
@@ -93,13 +93,13 @@ export default function TopMenu() {
 
                     <ul 
                         id="TopMenuRight"
-                        className="flex items-center text-[11px] text-[#333333] px-2 h-8"
+                        className="flex items-center text-[13px] text-[#333333] px-2 h-8"
                     >
                         <li 
                             onClick={() => router.push('/address')} 
                             className="flex items-center gap-2 px-3 hover:underline cursor-pointer"
                         >
-                            <img width={32} src="/images/uk.png"/>
+                            <img width={40} src="/images/bangladesh.png"/>
                             Ship to
                         </li>
                         <ClientOnly>

@@ -25,10 +25,10 @@ export default function SubMenu() {
                         className="
                             flex 
                             items-center 
-                            text-[13px] 
+                            text-[15px] 
                             text-[#333333]
                             px-2 
-                            h-8
+                            h-12
                         "
                     >
                         {menuItems.map(item => (
